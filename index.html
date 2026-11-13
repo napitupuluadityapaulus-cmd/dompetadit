@@ -1345,9 +1345,9 @@ function migrateTrx(t) {
   };
 }
 
+let settings     = Object.assign({}, DEFAULT_SETTINGS, load(LS.set, {}));
 let transactions = load(LS.trx, []).map(migrateTrx);
 let goals        = load(LS.goals, []);
-let settings     = Object.assign({}, DEFAULT_SETTINGS, load(LS.set, {}));
 
 if (!localStorage.getItem(LS.set) && window.matchMedia &&
     window.matchMedia('(prefers-color-scheme: dark)').matches) {
