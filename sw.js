@@ -1,5 +1,5 @@
 /* DompetAdit Service Worker */
-const CACHE = 'dompetadit-v5';
+const CACHE = 'dompetadit-v6';
 const ASSETS = ['./', './index.html'];
 
 self.addEventListener('install', e => {
